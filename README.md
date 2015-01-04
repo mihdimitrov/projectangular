@@ -1,1 +1,3 @@
-=== This is my angular app
+Online Ads Publishing SPA
+===================
+

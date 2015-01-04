@@ -3,5 +3,5 @@ angular.module('ap.ads.controllers', [
 ])
 
 .controller('AdsController', function($scope, AdsService) {
-  $scope.text = "Svetlio e kovra";
+  $scope.text = "hello";
 });

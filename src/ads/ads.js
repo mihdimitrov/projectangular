@@ -1,6 +1,7 @@
 angular.module('ap.ads', [
   'ap.ads.controllers',
   'ap.ads.services',
+  'ap.ads.directives',
   'ui.router'
 ])
 

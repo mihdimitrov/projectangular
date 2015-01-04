@@ -1,1 +1,6 @@
-Kako re4i? {{text}}
+<div ng-repeat="currentTuple in adTuples">
+  <div ng-repeat="currentAd in currentTuple">
+    <ap-ad-content ad-object="currentAd"></ap-ad-content>
+  </div>
+  <hr>
+</div>

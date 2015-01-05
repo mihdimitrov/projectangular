@@ -3,7 +3,7 @@ angular.module('ap.ads.controllers', [
 ])
 
 .controller('AppController', function($scope, adsService) {
-  $http.get('http://softuni-ads.azurewebsites.net/api/ads')
+  //$http.get('http://softuni-ads.azurewebsites.net/api/ads')
     adsService.getAllAds()
     .success(function(data) {
       $scope.adTuples = formatAdsInTuples(data.ads);

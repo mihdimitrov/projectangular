@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="ap">
   <head>
+    <title>adsApp</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-route.js"></script>
+    <script type="text/javascript" src="./bower_components/bootstrap/bootstrap.min.css"></script>
     <script type="text/javascript" src="app.js" ></script>
     <script type="text/javascript"  src="app-controllers.js"></script>
     <script type="text/javascript"  src="src/ads/ads.js"></script>
@@ -11,6 +16,29 @@
     <script type="text/javascript"  src="src/ads/ads-directives.js"></script>
   </head>
   <body ng-controller="AppController">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="./" class="navbar-brand"><img src="assets/img/logo-nav.png">AdsApp</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">Login</a>
+            </li>
+            <li>
+              <a href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div ng-view class="jumbotron">
+      <div>class="row"</div>
+      <div class="col-md-2"></div>
+    </div>
     <ui-view />
   </body>
 </html>

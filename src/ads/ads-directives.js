@@ -1,10 +1,10 @@
-angular.module('ap.ads.directives', [])
+// angular.module('ap.ads.directives', [])
 
-.directive('apAdContent', function() {
-  return {
-    templateUrl: 'src/ads/ad-content.html',
-    scope: {
-      adObject: '='
-    }
-  }
-})
+// .directive('apAdContent', function() {
+//   return {
+//     templateUrl: 'src/ads/ad-content.html',
+//     scope: {
+//       adObject: '='
+//     }
+//   }
+// })

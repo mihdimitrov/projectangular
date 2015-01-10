@@ -1,48 +1,28 @@
 <!DOCTYPE html>
-<html ng-app="ap">
+<html ng-app="adsApp">
   <head>
     <title>adsApp</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script type="text/javascript" src="./bower_components/angular-route.js"></script>
-    <script type="text/javascript" src="./bower_components/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="./bower_components/bootstrap.js"></script>
-    <script type="text/javascript" src="./bower_components/bootstrap/bootstrap.min.css"></script>
-    <script type="text/javascript" src="app.js" ></script>
-    <script type="text/javascript"  src="js/controllers/HomeCtrl.js"></script>
-    <script type="text/javascript"  src="js/directives/left-sidebar.js"></script>
-    <script type="text/javascript"  src="app-controllers.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="src/assets/main.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript"  src="app.js" ></script>
+    <script type="text/javascript"  src="src/home/home.js"></script>
+    <script type="text/javascript"  src="src/home/home-controllers.js"></script>
     <script type="text/javascript"  src="src/ads/ads.js"></script>
     <script type="text/javascript"  src="src/ads/ads-controllers.js"></script>
     <script type="text/javascript"  src="src/ads/ads-services.js"></script>
     <script type="text/javascript"  src="src/ads/ads-directives.js"></script>
   </head>
-  <body ng-controller="AppController">
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="./" class="navbar-brand"><img src="assets/img/logo-nav.png">AdsApp</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#">Login</a>
-            </li>
-            <li>
-              <a href="#">Register</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <body>
+    <div class="container">
+      <header class="text-center">
+        <h1 class="inline-block">Ads - Home</h1>
+      </header>
+      <ng-view></ng-view>
     </div>
-    <div ng-view class="jumbotron">
-      <div class-"row"></div>
-      <div class="col-md-2"></div>
+    <div class="navbar-default navbar-fixed-bottom footer">
+    <Span>&#169 2015 by Mihail Dimitrov, No Rights Reserved</Span>
     </div>
-    <ui-view />
   </body>
 </html>

@@ -1,7 +1,5 @@
-// angular.module('ap.ads.services', [
+angular.module('adsApp.ads.services', [])
 
-// ])
-
-// .service('AdsService', function() {
-//   getAllAds()
-// });
+.service('AdsSrvc', function() {
+  
+});

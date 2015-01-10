@@ -1,7 +1,8 @@
-// angular.module('ap.ads.controllers', [
-//   'ap.ads.services'
-// ])
+angular.module('adsApp.ads.controllers', [
+	'adsApp.ads.services'
+])
 
-// .controller('AdsController', function($scope, AdsService) {
-//   $scope.text = "hello";
-// });
+.controller('AdsCtrl', function($scope, AdsService) {
+  $scope.text = "hello";
+  AdsService.gkjrlgjlkjglr
+});

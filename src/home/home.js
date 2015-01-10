@@ -1,0 +1,1 @@
+angular.module('adsApp.home',['adsApp.home.controllers']);

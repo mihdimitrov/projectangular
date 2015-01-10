@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="adsApp">
+<html ng-app="adsApp" ng-controller="AppCtrl">
   <head>
     <title>adsApp</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
@@ -7,22 +7,26 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script type="text/javascript"  src="app.js" ></script>
+    <script type="text/javascript"  src="app-controllers.js" ></script>
     <script type="text/javascript"  src="src/home/home.js"></script>
     <script type="text/javascript"  src="src/home/home-controllers.js"></script>
     <script type="text/javascript"  src="src/ads/ads.js"></script>
     <script type="text/javascript"  src="src/ads/ads-controllers.js"></script>
     <script type="text/javascript"  src="src/ads/ads-services.js"></script>
     <script type="text/javascript"  src="src/ads/ads-directives.js"></script>
+    <script type="text/javascript"  src="src/login/login.js"></script>
+    <script type="text/javascript"  src="src/login/login-directives.js"></script>
+    <script type="text/javascript"  src="src/login/login-controllers.js"></script>
+    <script type="text/javascript"  src="src/register/register.js"></script>
+    <script type="text/javascript"  src="src/register/register-controllers.js"></script>
   </head>
   <body>
-    <div class="container">
-      <header class="text-center">
-        <h1 class="inline-block">Ads - Home</h1>
-      </header>
+    <header class="text-center">
+      <h1 class="inline-block">Ads - {{title.currentPage}}</h1>
+    </header>
+    <div class="page-content">
       <ng-view></ng-view>
     </div>
-    <div class="navbar-default navbar-fixed-bottom footer">
-    <Span>&#169 2015 by Mihail Dimitrov, No Rights Reserved</Span>
-    </div>
+    <footer class="text-center">&#169 2015 by Mihail Dimitrov, No Rights Reserved</footer>
   </body>
 </html>

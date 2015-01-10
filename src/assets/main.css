@@ -2,6 +2,49 @@
   display: inline-block;
 }
 
-header {
-  background-color: green;
+header, footer {
+  background-color: rgb(169, 209, 142);
+  border: 1px solid green;
+}
+
+.page-content {
+  padding: 20px;
+  background-color: rgb(226, 240, 217);
+}
+
+.login-promotion{
+  border : 1px solid green;
+  width: 172px;
+  padding: 23px 20px;
+  background-color: rgb(169, 209, 142);
+}
+
+.login-promotion #login_btn, .login-promotion #register_btn {
+  border : 1px solid green;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 37px;
+  margin-top: 15px;
+  background-color: rgb(112, 173, 71);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.ad-detail{
+  border : 1px solid green;
+  background-color: rgb(197, 224, 180);
+}
+
+.ad-thumbnail-wrapper{
+  padding:20px ;
+}
+
+.ad-content{
+  background-color: rgb(169, 209, 142);
+  border: 1px solid green;
+  width: 438px;
+  padding: 20px 26px;
+  margin-bottom: 15px;
 }

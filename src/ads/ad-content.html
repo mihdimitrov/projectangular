@@ -1,3 +1,20 @@
-<div>{{adObject.title}}</div>
-<div>{{adObject.text}}</div>
-<img ng-src="{{adObject.imageDataUrl}}">
+<div class='ad-content'>
+  <div>
+    <div class='pull-left'>{{adObject.title}}</div>
+    <div class='pull-right'>{{adObject.date | date: 'd-MMM-yyyy'}}</div>
+    <div style="clear: both"></div>
+  </div>
+  <div>
+    <div class='pull-left ad-detail'>
+      <img ng-src="{{adObject.imageDataUrl}}" height="82" width="86">
+    </div>
+    <div class='pull-right'>
+      <div class='ad-detail'>{{adObject.text}}</div>
+      <div>Name &nbsp;<span class='ad-detail'>{{adObject.ownerName}}</span></div>
+      <div>Email: &nbsp;<span class='ad-detail'>{{adObject.ownerEmail}}</span></div>
+      <div>Tel. &nbsp;<span class='ad-detail'>{{adObject.ownerPhone}}</span></div>
+    </div>
+    <div style="clear: both"></div>
+  </div>
+</div>
+
